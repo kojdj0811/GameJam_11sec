@@ -4,55 +4,59 @@ using UnityEngine;
 
 public class MoveBlock : MonoBehaviour
 {
-    //시작하는 시간
-     float XstartTime;
-     float ZstartTime;
-    //bool X Z
-    [Header("수동체크박스")]
-    public bool UseXBlock, UseZBlcok = true;
-    //왔다갔다하는 최소 최대값
-    [Range(-100, 100)]
-    public float minX, maxX;
-    [Range(-100, 100)]
-    public float minZ, maxZ;
-   
-    //속도
-    [Range(1,100)]
+    [Header("시작블록/끝지점블록")]
+    public GameObject StartBlock;
+    public GameObject EndBlock;
+    [Header("블럭속도")]
     public int moveSpeed;
-    private int sign =-1;
+    //왔다갔다
+    Vector3 CubVec;
+
+    bool isGostart;
+
+    private void Start()
+    {
+        //transform.position = EndBlock.transform.position;
+    }
 
 
-   
+
     void FixedUpdate()
     {
         Moving();
     }
     void Moving()
     {
-        if (Time.time >= XstartTime && UseXBlock)
+       
+       // transform.position = Vector3.MoveTowards(transform.position, EndBlock.transform.position, moveSpeed*Time.deltaTime);
+        if (isGostart)
         {
-            UseZBlcok = false;
-            transform.position += new Vector3(moveSpeed * Time.deltaTime * sign, 0, 0);
-            if (transform.position.x <= minX || transform.position.x >= maxX)
-            {
-                sign *= -1;
-            }
-         
-        }
-        if (Time.time >= ZstartTime && UseZBlcok)
-        {
-            UseXBlock = false;
-            transform.position += new Vector3(0, 0, moveSpeed * Time.deltaTime * sign);
-            if (transform.position.z <= minZ || transform.position.z >= maxZ)
-            {
-                sign *= -1;
-            }
+            transform.position = Vector3.MoveTowards(transform.position, StartBlock.transform.position, moveSpeed * Time.deltaTime);
 
         }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, EndBlock.transform.position, moveSpeed * Time.deltaTime);
 
+        }
     }
+
+
+
+
+
+
+    //충돌///////////////////////////////////////////////////////
      void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("EndBlock"))
+        {
+            isGostart = true;
+        }
+        if (other.gameObject.CompareTag("StartBlock"))
+        {
+            isGostart = false;
+        }
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("이벤트 발생");
