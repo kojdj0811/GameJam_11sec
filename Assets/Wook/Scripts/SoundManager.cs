@@ -43,6 +43,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         playSoundName = new string[audioSourceEffects.Length];
+        PlayBGM("Main");
     }
 
     public void SoundEffect(string _name)

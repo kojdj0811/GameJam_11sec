@@ -80,6 +80,11 @@ public class EndCheck : MonoBehaviour
     {
         if (!isEnd &&(collision.transform.tag == "PlayerLegL" || collision.transform.tag == "PlayerLegR"))
         {
+            int i = Random.Range(0,4);
+            if(i == 0)
+                SoundManager.instance.SoundEffect("ButtonReal");
+            else
+                SoundManager.instance.SoundEffect("Button");
             endCrane.CraneMoveStart();
             End();
         }
