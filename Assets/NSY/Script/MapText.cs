@@ -14,7 +14,7 @@ public class MapText : MonoBehaviour
     {
       
         MapTexting.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.7f);
         Debug.Log("»ç¶óÁü");
         MapTexting.SetActive(false);
     }
