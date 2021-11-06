@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/// <summary>
+/// 효과음 : SoundManager.instance.SoundEffect("Test");
+/// 배경음 : SoundManager.instance.PlayBGM("TestBGM");
+/// </summary>
 [System.Serializable]
 public class Sound
 {
@@ -29,6 +33,11 @@ public class SoundManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        playSoundName = new string[audioSourceEffects.Length];
     }
 
     public void SoundEffect(string _name)
@@ -72,5 +81,19 @@ public class SoundManager : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public void PlayBGM(string _name)
+    {
+        for(int i = 0; i<bgmSounds.Length; i++)
+        {
+            if(bgmSounds[i].name == _name)
+            {
+                audioSourceBgm.clip = bgmSounds[i].clip;
+                audioSourceBgm.Play();
+            }
+        }
+
+       
     }
 }
