@@ -100,10 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 199338964290139405}
-  buttonSpeed: 0.8
+  buttonSpeed: 0.7
   arrow: {fileID: 199338964724660499}
   rotateSpeed: 300
   UpDownSPeed: 0.6
+  endCrane: {fileID: 0}
 --- !u!64 &199338963499007646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -173,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199338964290139405}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.32437733, y: -0.006, z: -1.2975093}
+  m_LocalPosition: {x: 0.32437733, y: 0, z: -1.2975093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 199338963499007642}

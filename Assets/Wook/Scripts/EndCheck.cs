@@ -14,11 +14,14 @@ public class EndCheck : MonoBehaviour
     [SerializeField] float rotateSpeed;
     [SerializeField] float UpDownSPeed;
 
+    [SerializeField] EndCrane endCrane;
+
     float UpDownTime = 1;
     bool isUp = true;
     private void Awake()
     {
         ButtonMovePos = new Vector3(Button.transform.position.x, Button.transform.position.y - 0.01f, Button.transform.position.z);
+        endCrane = FindObjectOfType<EndCrane>();
     }
 
     private void Update()
@@ -51,7 +54,7 @@ public class EndCheck : MonoBehaviour
 
     IEnumerator MoveButton()
     {
-        float time = 0.5f;
+        float time = 0.23f;
         while(time >= 0)
         {
             Button.transform.Translate(Vector3.down * Time.deltaTime*buttonSpeed, Space.World);
@@ -66,6 +69,10 @@ public class EndCheck : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (!isEnd &&(collision.transform.tag == "PlayerLegL" || collision.transform.tag == "PlayerLegR"))
+        {
+            endCrane.CraneMoveStart();
             End();
+        }
+            
     }
 }
