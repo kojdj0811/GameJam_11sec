@@ -33,6 +33,11 @@ public class SoundManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        for (int i = 0; i < audioSourceEffects.Length; i++)
+            audioSourceEffects[i].volume = 0.3f;
+        audioSourceBgm.volume = 0.3f;
+
     }
 
     private void Start()
