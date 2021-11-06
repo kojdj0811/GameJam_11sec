@@ -19,7 +19,11 @@ public class EndCrane : MonoBehaviour
         if (EndCraneDown)
             transform.Translate(Vector3.down * Time.deltaTime * speed);
     }
+    private void Start()
+    {
+        SoundManager.instance.SoundEffect("SceneStart");
 
+    }
     public void CraneMoveStart()
     {
         EndCraneMove = true;
@@ -37,7 +41,9 @@ public class EndCrane : MonoBehaviour
     {
         float time = 2f;
         float Upspeed = 8;
-        while(time >= 0)
+        SoundManager.instance.SoundEffect("SceneEnd");
+
+        while (time >= 0)
         {
             time -= Time.deltaTime;
             transform.Translate(Vector3.up * Time.deltaTime * Upspeed);
