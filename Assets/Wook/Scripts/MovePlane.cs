@@ -14,7 +14,6 @@ public class MovePlane : MonoBehaviour
 
     [SerializeField] MoveDir moveDir;
     [SerializeField] float Speed;
-    [SerializeField] float halfSize;
 
     bool IsLegL = false;
     bool IsLegR = false;
@@ -27,8 +26,7 @@ public class MovePlane : MonoBehaviour
 
     void MoveToFront(Vector3 targetPos)
     {
-        var TargetPos = new Vector3(targetPos.x + halfSize, targetPos.y, targetPos.z);
-        transform.position = Vector3.MoveTowards(transform.position, TargetPos, Speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, Speed * Time.deltaTime);
 
     }
 
