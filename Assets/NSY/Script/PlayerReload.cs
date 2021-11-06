@@ -7,16 +7,18 @@ public class PlayerReload : MonoBehaviour
    
     void Update()
     {
-        ReLoad();
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReLoad();
+        }
     }
 
     public void ReLoad()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
+        
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             
-        }
+        
 
     }
  
