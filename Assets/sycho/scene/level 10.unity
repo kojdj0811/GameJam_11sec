@@ -770,6 +770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8509054209770289411, guid: 55b46f4d387b7fd459ad52f8f1213b3a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e75d51d555dec54b90544819dd5e13a, type: 2}
     - target: {fileID: 8521114587551538733, guid: 55b46f4d387b7fd459ad52f8f1213b3a, type: 3}
       propertyPath: m_Name
       value: SM_Primitive_Tube_03 Variant (1)
@@ -1284,6 +1288,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6869344159875019136, guid: 13bb6b4f4cadf394289e87b857e8ea73, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e75d51d555dec54b90544819dd5e13a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13bb6b4f4cadf394289e87b857e8ea73, type: 3}
 --- !u!1 &2024032711
