@@ -1624,6 +1624,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 9da605f8a67d80f48b83f3f74f090b7f, type: 3}
   - name: ButtonReal
     clip: {fileID: 8300000, guid: 2611d935bfd02be4cafac47c7f831e3f, type: 3}
+  - name: Move1
+    clip: {fileID: 8300000, guid: b849aedb9344ab941b4f22b3a3703abc, type: 3}
+  - name: Move2
+    clip: {fileID: 8300000, guid: d571abd097e8425479a8fb893d5db77c, type: 3}
+  - name: Move3
+    clip: {fileID: 8300000, guid: afd8472de06c519469839fe00c71d563, type: 3}
   bgmSounds:
   - name: Main
     clip: {fileID: 8300000, guid: 00379ff33019bab4c9495c70aa3c3ff7, type: 3}

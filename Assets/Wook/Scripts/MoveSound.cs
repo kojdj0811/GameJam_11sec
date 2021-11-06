@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class MoveSound : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        int i = Random.Range(0, 3);
+        switch(i)
+        {
+            case 1:
+                SoundManager.instance.SoundEffect("Move1");
+                break;
+            case 2:
+                SoundManager.instance.SoundEffect("Move2");
+                break;
+            case 3:
+                SoundManager.instance.SoundEffect("Move3");
+                break;
+        }
+
     }
 }
