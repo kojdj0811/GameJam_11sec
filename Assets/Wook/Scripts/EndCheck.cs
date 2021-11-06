@@ -8,7 +8,7 @@ public class EndCheck : MonoBehaviour
     [SerializeField] float buttonSpeed;
     Vector3 ButtonMovePos;
 
-    bool isEnd = false;
+    public bool isEnd = false;
 
     [SerializeField] GameObject arrow;
     [SerializeField] float rotateSpeed;
