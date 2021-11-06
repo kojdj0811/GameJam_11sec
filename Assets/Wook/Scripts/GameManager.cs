@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+#if !UNITY_EDITOR
+        Cursor.visible = false;
+#endif
     }
 
     public static void LoadNextScene()

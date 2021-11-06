@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Minsu/Scenes/RefScene_level5.unity
-    guid: 94dffef5d132487498bca3090530cedd
-  - enabled: 1
     path: Assets/sycho/scene/level 1.unity
     guid: df4116199ab2c014889c4e8dac7d5dea
   - enabled: 1
@@ -23,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/sycho/scene/level 5.unity
     guid: 99925b5e0870145459d8ab40624c4179
+  - enabled: 1
+    path: Assets/sycho/scene/level 6.unity
+    guid: 8b8bd1d060ccef046a8cee8887860a73
+  - enabled: 1
+    path: Assets/sycho/scene/level 7.unity
+    guid: 935319cb6df0e4148a9aea96430354f1
+  - enabled: 1
+    path: Assets/sycho/scene/level 8.unity
+    guid: 8412d2914b69beb4bb61373b12d98182
+  - enabled: 1
+    path: Assets/sycho/scene/level 9.unity
+    guid: e96fc53a15db8fd48a1ae12cfedfad12
+  - enabled: 1
+    path: Assets/sycho/scene/level 10.unity
+    guid: 270936be5fab2b34d88bd4df6e4e779c
+  - enabled: 1
+    path: Assets/sycho/scene/level 11.unity
+    guid: 4f434647a26a7e8498043902b5a68558
+  - enabled: 1
+    path: Assets/sycho/scene/level woojoo.unity
+    guid: 35410a0f86921ce4591a1babc746a63a
   m_configObjects: {}

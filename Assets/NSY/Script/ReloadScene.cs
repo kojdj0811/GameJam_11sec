@@ -11,6 +11,17 @@ public class ReloadScene : MonoBehaviour
 
     public void ClickReloadBtn()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ///////Minsu
+        GameObject fadeOutObj = GameObject.Find("/SceneTransition1/TransitionCanvas/Transition1_fadeOut_shorter");
+        if (fadeOutObj != null)
+        {
+            fadeOutObj.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("Error. Couldn't find SceneTransition GameObject.");
+        }
+        /////////////
     }
 }

@@ -12,6 +12,7 @@ public class TransitionCompleteEvent : UnityEvent { }
 public class DoTransitionMat : MonoBehaviour
 {
     public bool isFadeOut = true;
+    public bool isRetry = false;
     public float fadeTime = 1f;
     public float startDelay = 0.5f;
     public Material targetMaterial;
@@ -48,9 +49,10 @@ public class DoTransitionMat : MonoBehaviour
 
         if (isFadeOut)
         {
-            ///юс╫ц
-            //SceneManager.LoadScene(4);
-            GameManager.LoadNextScene();
+            if (!isRetry)
+                GameManager.LoadNextScene();
+            else
+                GameManager.ReloadCurrentScene();
         }
         else
         {

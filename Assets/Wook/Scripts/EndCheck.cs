@@ -50,7 +50,7 @@ public class EndCheck : MonoBehaviour
         isEnd = true;
         StartCoroutine(MoveButton());
 
-        //
+        ///////Minsu
         GameObject fadeOutObj = GameObject.Find("/SceneTransition1/TransitionCanvas/Transition1_fadeOut");
         if (fadeOutObj != null)
         {
@@ -60,6 +60,7 @@ public class EndCheck : MonoBehaviour
         {
             Debug.Log("Error. Couldn't find SceneTransition GameObject.");
         }
+        /////////////
     }
 
     IEnumerator MoveButton()
