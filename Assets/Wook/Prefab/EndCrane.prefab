@@ -222,12 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5b9646e6b40344290c31950fc82917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRigid:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  playerRigid: []
   player: {fileID: 0}
   playerparents: {fileID: 0}
   EndCraneDown: 0
