@@ -646,6 +646,12 @@ MonoBehaviour:
   legRollInSpeed: 300
   legRollOutSpeed: 300
   isLeft: 1
+  LLeg_InputKey: 119
+  RLeg_InputKey: 113
+  LLegFold_InputKey: 119
+  LLegUnfold_InputKey: 119
+  RLegFold_InputKey: 47
+  RLegUnfold_InputKey: 113
 --- !u!4 &389638635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5487009138171804959, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}
@@ -2132,6 +2138,12 @@ MonoBehaviour:
   legRollInSpeed: 300
   legRollOutSpeed: 300
   isLeft: 0
+  LLeg_InputKey: 119
+  RLeg_InputKey: 113
+  LLegFold_InputKey: 119
+  LLegUnfold_InputKey: 119
+  RLegFold_InputKey: 47
+  RLegUnfold_InputKey: 113
 --- !u!4 &1662031040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3790710497107923048, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}
@@ -3264,6 +3276,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3186823293936220324, guid: 2f427ade2f5c1c6448f77841698706c3, type: 3}
+      propertyPath: RLegUnfold_InputKey
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3186823294299303369, guid: 2f427ade2f5c1c6448f77841698706c3, type: 3}
+      propertyPath: RLegUnfold_InputKey
+      value: 39
+      objectReference: {fileID: 0}
     - target: {fileID: 3186823294669274756, guid: 2f427ade2f5c1c6448f77841698706c3, type: 3}
       propertyPath: m_RootOrder
       value: 4
