@@ -21,6 +21,12 @@ public class EndCrane : MonoBehaviour
     }
     private void Start()
     {
+        StartCoroutine(SceneStartSound());
+    }
+
+    IEnumerator SceneStartSound()
+    {
+        yield return new WaitForSeconds(0.18f);
         SoundManager.instance.SoundEffect("SceneStart");
 
     }
