@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Primitive_Torus_01 (2) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3666803616379557982, guid: 945b8249a3012844b8dd0d1683445fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e75d51d555dec54b90544819dd5e13a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945b8249a3012844b8dd0d1683445fd6, type: 3}
 --- !u!1 &99356725
@@ -1291,6 +1295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Primitive_Torus_01 (2) Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3666803616379557982, guid: 945b8249a3012844b8dd0d1683445fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e75d51d555dec54b90544819dd5e13a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945b8249a3012844b8dd0d1683445fd6, type: 3}
 --- !u!1001 &1442233093
