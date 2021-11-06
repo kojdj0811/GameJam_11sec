@@ -517,6 +517,7 @@ GameObject:
   - component: {fileID: 777679642}
   - component: {fileID: 777679641}
   - component: {fileID: 777679640}
+  - component: {fileID: 777679639}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -524,6 +525,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!82 &777679639
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777679638}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &777679640
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1603,6 +1700,7 @@ MonoBehaviour:
   - {fileID: 777679643}
   - {fileID: 777679642}
   - {fileID: 777679641}
+  - {fileID: 777679639}
   audioSourceBgm: {fileID: 777679640}
   playSoundName:
   - 
@@ -1630,6 +1728,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d571abd097e8425479a8fb893d5db77c, type: 3}
   - name: Move3
     clip: {fileID: 8300000, guid: afd8472de06c519469839fe00c71d563, type: 3}
+  - name: Trashed1
+    clip: {fileID: 8300000, guid: 8fcd1f882c0b35f49850a6b4ea587e63, type: 3}
+  - name: Trashed2
+    clip: {fileID: 8300000, guid: 22345318877a13b4d9b3844acaf43bb1, type: 3}
+  - name: Trashed3
+    clip: {fileID: 8300000, guid: 5df32cb80fbc26d45adfaff3e69c3343, type: 3}
   bgmSounds:
   - name: Main
     clip: {fileID: 8300000, guid: 00379ff33019bab4c9495c70aa3c3ff7, type: 3}
