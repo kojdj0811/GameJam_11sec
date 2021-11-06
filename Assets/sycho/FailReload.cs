@@ -39,6 +39,19 @@ public class FailReload : MonoBehaviour
     }
     public void ThrowAway()
     {
+        int i = Random.Range(0, 3);
+        switch (i)
+        {
+            case 1:
+                SoundManager.instance.SoundEffect("Trashed1");
+                break;
+            case 2:
+                SoundManager.instance.SoundEffect("Trashed2");
+                break;
+            case 3:
+                SoundManager.instance.SoundEffect("Trashed3");
+                break;
+        }
         m_gameoverPanel.GetComponent<Image>().enabled = true;
         m_gameoverText.GetComponent<Text>().enabled = true;
         m_pelvic.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;

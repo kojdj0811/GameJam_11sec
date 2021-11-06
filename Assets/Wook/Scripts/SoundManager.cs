@@ -36,7 +36,7 @@ public class SoundManager : MonoBehaviour
 
         for (int i = 0; i < audioSourceEffects.Length; i++)
             audioSourceEffects[i].volume = 0.3f;
-        audioSourceBgm.volume = 0.3f;
+        audioSourceBgm.volume = 0.2f;
 
     }
 
@@ -54,7 +54,7 @@ public class SoundManager : MonoBehaviour
             {
                 for (int j = 0; j < audioSourceEffects.Length; j++)
                 {
-                    if(!audioSourceEffects[i].isPlaying)
+                    if(!audioSourceEffects[j].isPlaying)
                     {
                         playSoundName[j] = effectSounds[i].name;
                         audioSourceEffects[j].clip = effectSounds[i].clip;
