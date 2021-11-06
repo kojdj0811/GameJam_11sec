@@ -525,6 +525,12 @@ MonoBehaviour:
   legRollInSpeed: 300
   legRollOutSpeed: 300
   isLeft: 0
+  LLeg_InputKey: 119
+  RLeg_InputKey: 113
+  LLegFold_InputKey: 47
+  LLegUnfold_InputKey: 39
+  RLegFold_InputKey: 122
+  RLegUnfold_InputKey: 97
 --- !u!1 &3186823293977552027
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +892,12 @@ MonoBehaviour:
   legRollInSpeed: 300
   legRollOutSpeed: 300
   isLeft: 1
+  LLeg_InputKey: 119
+  RLeg_InputKey: 113
+  LLegFold_InputKey: 47
+  LLegUnfold_InputKey: 39
+  RLegFold_InputKey: 122
+  RLegUnfold_InputKey: 97
 --- !u!1 &3186823294433136855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1251,7 @@ GameObject:
   - component: {fileID: 3186823294669274756}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
