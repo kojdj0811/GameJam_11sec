@@ -308,6 +308,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 1.37
       objectReference: {fileID: 0}
+    - target: {fileID: 7585160744898883308, guid: 9b8df1ce3136e9c40962c86b62bbc10f, type: 3}
+      propertyPath: m_TagString
+      value: MovingBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 7585160744898883312, guid: 9b8df1ce3136e9c40962c86b62bbc10f, type: 3}
       propertyPath: m_Mesh
       value: 

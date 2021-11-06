@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 6260212100150048899}
   m_Layer: 0
   m_Name: Pelvic
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3186823293936220347}
   - component: {fileID: 3186823293936220344}
+  - component: {fileID: 7393177270588884582}
   - component: {fileID: 3186823293936220345}
   - component: {fileID: 3186823293936220326}
   - component: {fileID: 3186823293936220325}
@@ -420,6 +421,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3186823293936220322}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7393177270588884582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186823293936220322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573363aef0d121d44ac20a4f60b28643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  m_pelvic: {fileID: 3186823293423772804}
 --- !u!23 &3186823293936220345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -601,6 +616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3186823294162576011}
   - component: {fileID: 3186823294162576014}
+  - component: {fileID: 4643231121997741572}
   - component: {fileID: 3186823294162576015}
   - component: {fileID: 3186823294162576013}
   - component: {fileID: 6484743098213269693}
@@ -638,6 +654,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3186823294162576008}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &4643231121997741572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186823294162576008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573363aef0d121d44ac20a4f60b28643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  m_pelvic: {fileID: 3186823293423772804}
 --- !u!23 &3186823294162576015
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -782,6 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3186823294299303372}
   - component: {fileID: 3186823294299303373}
+  - component: {fileID: 1382062025226342170}
   - component: {fileID: 3186823294299303370}
   - component: {fileID: 3186823294299303371}
   - component: {fileID: 3186823294299303350}
@@ -817,6 +848,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3186823294299303351}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1382062025226342170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186823294299303351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573363aef0d121d44ac20a4f60b28643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  m_pelvic: {fileID: 3186823293423772804}
 --- !u!23 &3186823294299303370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -968,6 +1013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3186823294433136854}
   - component: {fileID: 3186823294433136877}
+  - component: {fileID: 7866745165782555948}
   - component: {fileID: 3186823294433136874}
   - component: {fileID: 3186823294433136872}
   - component: {fileID: 8685060328731238369}
@@ -1005,6 +1051,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3186823294433136855}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7866745165782555948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186823294433136855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573363aef0d121d44ac20a4f60b28643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  m_pelvic: {fileID: 3186823293423772804}
 --- !u!23 &3186823294433136874
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2128,9 +2188,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400102, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
   m_PrefabInstance: {fileID: 3186823294399060313}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3186823294399447985 stripped
+--- !u!4 &3186823294399447657 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400104, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
+  m_CorrespondingSourceObject: {fileID: 400176, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
   m_PrefabInstance: {fileID: 3186823294399060313}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &3186823294399447679 stripped
@@ -2138,9 +2198,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400166, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
   m_PrefabInstance: {fileID: 3186823294399060313}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3186823294399447657 stripped
+--- !u!4 &3186823294399447941 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400176, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
+  m_CorrespondingSourceObject: {fileID: 400092, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
   m_PrefabInstance: {fileID: 3186823294399060313}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &3186823294399447959 stripped
@@ -2163,9 +2223,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400174, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
   m_PrefabInstance: {fileID: 3186823294399060313}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3186823294399447941 stripped
+--- !u!4 &3186823294399447985 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400092, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
+  m_CorrespondingSourceObject: {fileID: 400104, guid: a73116c7aa097df4db960cf8576e1b63, type: 3}
   m_PrefabInstance: {fileID: 3186823294399060313}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &3186823294223485469

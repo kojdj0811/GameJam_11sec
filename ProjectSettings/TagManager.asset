@@ -9,6 +9,10 @@ TagManager:
   - Swamp
   - PlayerLegL
   - PlayerLegR
+  - EndBlock
+  - StartBlock
+  - Bottom
+  - MovingBlock
   layers:
   - Default
   - TransparentFX
