@@ -81,19 +81,19 @@ public class CtrlThigh_v2 : MonoBehaviour
     {
         jointMotor.targetVelocity = legRollInSpeed;
         hingeJoint.motor = jointMotor;
-        Debug.Log((isLeft ? "Left " : "Right ") + "in");
+        // Debug.Log((isLeft ? "Left " : "Right ") + "in");
     }
     void RollOut()
     {
         jointMotor.targetVelocity = -legRollOutSpeed;
         hingeJoint.motor = jointMotor;
-        Debug.Log((isLeft ? "Left " : "Right ") + "out");
+        // Debug.Log((isLeft ? "Left " : "Right ") + "out");
     }
     void RollStop()
     {
         jointMotor.targetVelocity = 0;
         hingeJoint.motor = jointMotor;
-        Debug.Log((isLeft ? "Left " : "Right ") + "stop");
+        // Debug.Log((isLeft ? "Left " : "Right ") + "stop");
 
     }
 }
