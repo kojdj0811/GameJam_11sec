@@ -14,15 +14,10 @@ public class MoveBlock : MonoBehaviour
 
     bool isGostart;
 
-    private void Start()
-    {
-        //transform.position = EndBlock.transform.position;
-    }
-
-
-
+  
     void FixedUpdate()
     {
+       
         Moving();
     }
     void Moving()
