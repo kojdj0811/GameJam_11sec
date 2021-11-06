@@ -113,7 +113,6 @@ public class CtrlThigh_v2 : MonoBehaviour
             RollStop();
         }
 
-
         if (Input.GetKey(LLegFold_InputKey))
         {
             if (isLeft)
