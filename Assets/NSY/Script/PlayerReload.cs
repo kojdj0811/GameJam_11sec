@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerReload : MonoBehaviour
 {
+   
     void Update()
     {
         ReLoad();
@@ -14,6 +15,9 @@ public class PlayerReload : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
         }
+
     }
+ 
 }
