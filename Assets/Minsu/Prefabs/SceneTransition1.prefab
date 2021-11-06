@@ -148,9 +148,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFadeOut: 0
   fadeTime: 1
-  startDelay: 0.5
+  startDelay: 0
   targetMaterial: {fileID: 2100000, guid: ee3537ed96c0c5343ab68af38f51b2cd, type: 2}
   materialValueName: _Cutoff
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7363884202611766909
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,10 +269,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFadeOut: 1
-  fadeTime: 1
-  startDelay: 0.5
+  fadeTime: 2
+  startDelay: 1.5
   targetMaterial: {fileID: 2100000, guid: ee3537ed96c0c5343ab68af38f51b2cd, type: 2}
   materialValueName: _Cutoff
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7363884203258296773
 GameObject:
   m_ObjectHideFlags: 0

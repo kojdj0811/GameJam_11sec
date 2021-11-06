@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
 using System;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class TransitionCompleteEvent : UnityEvent { }
@@ -47,10 +48,16 @@ public class DoTransitionMat : MonoBehaviour
 
         if (isFadeOut)
         {
+            ///юс╫ц
+            //SceneManager.LoadScene(4);
+            GameManager.LoadNextScene();
         }
         else
         {
             gameObject.SetActive(false);
         }
+
+
+
     }
 }

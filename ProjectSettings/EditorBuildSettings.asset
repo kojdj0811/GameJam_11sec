@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Minsu_v1.unity
-    guid: 5cd27d86c8ced784492ea4fccd0f32a5
+    path: Assets/Minsu/Scenes/RefScene_level5.unity
+    guid: 94dffef5d132487498bca3090530cedd
+  - enabled: 1
+    path: Assets/sycho/scene/level 1.unity
+    guid: df4116199ab2c014889c4e8dac7d5dea
+  - enabled: 1
+    path: Assets/sycho/scene/level 2.unity
+    guid: c2235c765fbc8464e9d6f5f3780ca46b
+  - enabled: 1
+    path: Assets/sycho/scene/level 3.unity
+    guid: 7117ade6118b32b419d9e5453f6ee4f6
+  - enabled: 1
+    path: Assets/sycho/scene/level 4.unity
+    guid: f657fadc9a0678b49a52e1e9d9e050e0
+  - enabled: 1
+    path: Assets/sycho/scene/level 5.unity
+    guid: 99925b5e0870145459d8ab40624c4179
   m_configObjects: {}
