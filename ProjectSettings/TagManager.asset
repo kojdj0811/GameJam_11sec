@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< Updated upstream
-  - TurnFront
-  - TurnBack
-  - PlayerLegL
-  - PlayerLegR
-=======
-  - StartBlock
-  - EndBlock
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX

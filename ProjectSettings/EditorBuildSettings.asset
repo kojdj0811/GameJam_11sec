@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Minsu_v1.unity
+    guid: 5cd27d86c8ced784492ea4fccd0f32a5
   m_configObjects: {}

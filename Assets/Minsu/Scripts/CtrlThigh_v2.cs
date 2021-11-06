@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CtrlThigh_v2 : MonoBehaviour
 {
-    [SerializeField] private float legRollInSpeed = 100;
-    [SerializeField] private float legRollOutSpeed = 100;
+    [SerializeField] private float legRollInSpeed = 100f;
+    [SerializeField] private float legRollOutSpeed = 100f;
     [SerializeField] private bool isLeft = true;
 
     HingeJoint hingeJoint;
@@ -21,6 +21,17 @@ public class CtrlThigh_v2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            //if (isLeft)
+            RollStop();
+        }
+        else if (Input.GetKeyUp(KeyCode.Q))
+        {
+            //if(!isLeft)
+            RollStop();
+        }
+
         if (Input.GetKey(KeyCode.Q))
         {
             if (isLeft)
@@ -28,46 +39,61 @@ public class CtrlThigh_v2 : MonoBehaviour
             else
                 RollOut();
         }
-
-        if (Input.GetKey(KeyCode.W))
+        else if (Input.GetKey(KeyCode.W))
         {
             if (isLeft)
                 RollOut();
             else
                 RollIn();
         }
+        
+        
+        
 
+        /*
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Q))
         {
             RollStop();
+        }*/
+        /*
+        if (isLeft)
+        {
+            if (Input.GetKeyUp(KeyCode.Q))
+                RollStop();
         }
+        else
+        {
+            if (Input.GetKeyUp(KeyCode.W))
+                RollStop();
+        }
+        */
         //    if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.Q))
         //    {
         //        RollStop();
         //    }
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Q))
+        /*if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Q))
         {
             RollStop();
-        }
+        }*/
     }
 
     void RollIn()
     {
         jointMotor.targetVelocity = legRollInSpeed;
         hingeJoint.motor = jointMotor;
-        Debug.Log("in");
+        Debug.Log((isLeft ? "Left " : "Right ") + "in");
     }
     void RollOut()
     {
         jointMotor.targetVelocity = -legRollOutSpeed;
         hingeJoint.motor = jointMotor;
-        Debug.Log("out");
+        Debug.Log((isLeft ? "Left " : "Right ") + "out");
     }
     void RollStop()
     {
         jointMotor.targetVelocity = 0;
         hingeJoint.motor = jointMotor;
-        Debug.Log("stop");
+        Debug.Log((isLeft ? "Left " : "Right ") + "stop");
 
     }
 }
