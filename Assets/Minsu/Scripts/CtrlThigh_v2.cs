@@ -35,7 +35,7 @@ public class CtrlThigh_v2 : MonoBehaviour
     {
 
         //2Key
-        ManageInput_v1();
+        //ManageInput_v1();
 
         //4Key
         ManageInput_v2();
@@ -77,16 +77,16 @@ public class CtrlThigh_v2 : MonoBehaviour
         if (Input.GetKey(RLeg_InputKey))
         {
             if (isLeft)
-                RollIn();
-            else
                 RollOut();
+            else
+                RollIn();
         }
         else if (Input.GetKey(LLeg_InputKey))
         {
             if (isLeft)
-                RollOut();
-            else
                 RollIn();
+            else
+                RollOut();
         }
     }
 
@@ -115,23 +115,23 @@ public class CtrlThigh_v2 : MonoBehaviour
 
         if (Input.GetKey(LLegFold_InputKey))
         {
-            if (isLeft)
+            if (!isLeft)
                 RollIn();
         }
         if (Input.GetKey(LLegUnfold_InputKey))
         {
-            if (isLeft)
+            if (!isLeft)
                 RollOut();
         }
 
         if (Input.GetKey(RLegFold_InputKey))
         {
-            if (!isLeft)
+            if (isLeft)
                 RollIn();
         }
         if (Input.GetKey(RLegUnfold_InputKey))
         {
-            if (!isLeft)
+            if (isLeft)
                 RollOut();
         }
     }
