@@ -53,13 +53,13 @@ public class FailReload : MonoBehaviour
         int i = Random.Range(0, 3);
         switch (i)
         {
-            case 1:
+            case 0:
                 SoundManager.instance.SoundEffect("Trashed1");
                 break;
-            case 2:
+            case 1:
                 SoundManager.instance.SoundEffect("Trashed2");
                 break;
-            case 3:
+            case 2:
                 SoundManager.instance.SoundEffect("Trashed3");
                 break;
         }
