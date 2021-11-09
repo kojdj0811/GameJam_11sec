@@ -6,21 +6,31 @@ public class endingManager : MonoBehaviour
 {
     public AudioClip[] soundClip = new AudioClip[4];
     AudioSource m_AudioSource;
+    private bool canQuitGame = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
         m_AudioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        if (canQuitGame)
+        {
+            if (Input.anyKey)
+            {
+                Debug.Log("Application.Quit()");
+                Application.Quit();
+            }
+        }
     }
-    public void quit()
 
+    public void quit()
     {
-        Application.Quit();
+        canQuitGame = true;
+        Debug.Log("Can quit from now by pressing any key.");
     }
 
     public void SoundPlay(int n)
