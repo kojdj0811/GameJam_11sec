@@ -19,7 +19,7 @@ public class endingManager : MonoBehaviour
     {
         if (canQuitGame)
         {
-            if (Input.anyKey)
+            if (Input.GetKey(KeyCode.Escape))
             {
                 Debug.Log("Application.Quit()");
                 Application.Quit();
@@ -30,7 +30,7 @@ public class endingManager : MonoBehaviour
     public void quit()
     {
         canQuitGame = true;
-        Debug.Log("Can quit from now by pressing any key.");
+        Debug.Log("Can quit from now by pressing ESC key.");
     }
 
     public void SoundPlay(int n)
